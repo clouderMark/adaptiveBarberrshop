@@ -1,0 +1,63 @@
+//  main: ../style.less
+
+.best-job {
+    position: relative;
+
+
+    &::before {
+        content: '';
+        position: absolute;
+        
+        border: 25px solid @modalSubmit;
+        border-right-width: 9px;
+        border-left-width: 166px;
+        border-right-color: transparent;
+        top: 400px;
+    }
+
+    &::after {
+        content: 'работа месяца';
+        position: absolute;
+        font-size: 19px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: @white;
+        top: 413px;
+        left: 24px;
+    }
+}
+
+@media(min-width: @tablet) {
+    .best-job {
+
+        &::before {
+            top: 35px;
+            left: -1px;
+        }
+
+        &::after {
+            top: 47px;
+            left: 17px;
+        }
+
+    }
+}
+
+@media(min-width: @desctop) {
+    .best-job {
+
+        &::before {
+            transform: rotate(180deg);
+            right: 0;
+            left: auto;
+            top: 26px;
+        }
+
+        &::after {
+            right: 23px;
+            top: 39px;
+            left: auto;
+        }
+    }
+}

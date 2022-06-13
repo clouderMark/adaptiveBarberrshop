@@ -1,0 +1,45 @@
+//  main: ../style.less
+
+.checkbox {
+
+    &:hover &__indicator::before {
+        border-color: @showlAllHover;
+    }
+
+    &:active &__indicator::before {
+        background-color: @showlAllHover;
+    }
+    
+    &__indicator {
+        position: relative;
+        
+        &::before {
+            content: '';
+            position: absolute;
+            left: -46px;
+            top: -6px;
+            width: 33px;
+            height: 33px;
+            border: 1px solid @newsLine;
+            background-color: @white;
+        }
+    }
+    &__input:checked + &__indicator::after {
+        content: '';
+        position: absolute;
+        width: 23px;
+        height: 11px;
+        border: 3px solid @black;
+        border-top: none;
+        border-right: none;
+        transform: rotate(-45deg);
+        left: -40px;
+        top: 3px;
+    }
+
+    &__input:focus + &__indicator + &__text{
+        outline: 5px auto -webkit-focus-ring-color;
+        outline-offset: 2px;
+    }
+
+}

@@ -1,0 +1,34 @@
+//  main: ../style.less
+
+.main-nav {
+    width: 250px;
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 85px;
+    z-index: 998;
+
+    &--oppened {
+        display: block;
+    }
+}
+
+@media (min-width: @tablet) {
+    .main-nav {
+        width: 100%;
+        position: static;
+        top: 0;
+        display: flex;
+        padding-left: 8.3%;
+        padding-right: 8.3%;
+        background-color: @black;
+    }
+}
+
+@media (min-width: @desctop) {
+    .main-nav {
+        justify-content: space-between;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}

@@ -1,0 +1,100 @@
+//  main: ../style.less
+
+.site-list {
+    background-color: @lightBrown;
+    display: flex;
+    flex-direction: column;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    &__item {
+        height: 51px;
+        min-width: 30px;
+        padding-left: 20px;
+        box-shadow: 0 1px @siteLine2,
+            0 2px @siteLine;
+
+        &:hover {
+            background-color: @navMobileHover;
+        }
+
+        &:focus {
+            outline: none;
+        }
+
+        &:active {
+            background-color: @navMobileActive;
+            color: rgba(255, 255, 255, 0.4);
+        }
+
+
+        &--last {
+            box-shadow: 0 1px @siteLine;
+        }
+    }
+}
+
+@media(min-width: @tablet) {
+    .site-list {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: @black;
+
+        &__item {
+            height: 72px;
+            box-shadow: none;
+            padding-left: 0;
+            padding-right: 2.9%;
+            padding-left: 2.9%;
+
+            &:hover {
+                background-color: inherit;
+                color: @navTabletHover;
+            }
+
+            &:active {
+                color: rgba(255, 255, 255, 0.3);
+            }
+        }
+
+        &__item:first-child {
+            padding-left: 0;
+        }
+
+        &__item:last-child {
+            padding-right: 0;
+        }
+    }
+}
+
+@media (min-width: @desctop) {
+    .site-list {
+        padding-left: 0;
+        width: 78%;
+
+        &__item {
+            padding-right: 4.3%;
+            padding-left: 4.3%;
+
+            &:hover {
+                background-color: @white;
+                color: @black;
+            }
+
+            &:active {
+                background-color: @white;
+                color: rgba(0,0,0,0.4);
+            }
+
+        }
+        &__item:first-child {
+            padding-left: 4.5%;
+        }
+    
+        &__item:last-child {
+            padding-right: 4%;
+        }
+    }
+}

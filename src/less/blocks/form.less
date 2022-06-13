@@ -1,0 +1,152 @@
+//  main: ../style.less
+
+.form {
+
+    &__item {
+        margin: 0;
+
+        &--1 {
+            margin-bottom: 6px;
+        }
+
+        &--2 {
+            margin-bottom: 32px;
+        }
+    }
+
+    &__login {
+        margin-bottom: 10px;
+    }
+
+    &__input {
+        width: 280px;
+        height: 50px;
+        border: 1px solid @newsLine;
+        margin: 0;
+        padding-left: 17px;
+        font-family: inherit;
+        font-size: 18px;
+
+        &::placeholder {
+            font-family: inherit;
+            font-size: 15px;
+            color: @black;
+        }
+
+        &--forgoten {
+            border-color: red;
+        }
+    }
+
+    &__restore {
+        text-decoration: underline;
+        &:hover {
+            color: @navTabletHover;
+        }
+        &:active {
+            color: @navMobileActive;
+        }
+    }
+
+    &__help {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 47px;
+    }
+
+    &__button {
+        width: 130px;
+        border: none;
+        font-size: 18px;
+        font-family: inherit;
+
+        &--submit {
+            background-color: @modalSubmit;
+            color: @white;
+
+            & span {
+                display: none;
+            }
+
+            &:hover {
+                background-color: @navMobileActive;
+            }
+
+            &:active {
+                background-color: @navMobileActive;
+                color: rgba(255, 255, 255, 0.3);
+            }
+
+            &:disabled {
+                background-color: @disabled;
+            }
+        }
+
+        &--close {
+            border: 1px solid @newsLine;
+
+            &:hover {
+                border-color: @showlAllHover;
+            }
+
+            &:active {
+                background-color: @showlAllHover;
+                color: rgba(255, 255, 255, 0.6);
+
+            }
+        }
+    }
+
+    &__button-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: @tablet) {
+
+    .form {
+
+        &__item {
+            margin: 0;
+
+            &--1 {
+                margin-bottom: 7px;
+            }
+
+            &--2 {
+                margin-bottom: 30px;
+            }
+        }
+
+        &__input {
+            width: 320px;
+            height: 70px;
+            padding-left: 22px;
+            font-size: 21px;
+
+            &::placeholder {
+                font-size: 21px;
+            }
+        }
+
+        &__help {
+            margin-bottom: 37px;
+        }
+
+        &__button {
+
+            &--submit {
+                width: 320px;
+
+                & span {
+                    display: inline-block;
+                }
+            }
+
+            &--close {
+                display: none;
+            }
+        }
+    }
+}

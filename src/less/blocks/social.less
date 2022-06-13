@@ -1,0 +1,149 @@
+//  main: ../style.less
+
+.social {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 26px;
+    &__title {
+        display: none;
+    }
+
+    &__list {
+        display: flex;
+        font-size: 0;
+        // border-top: 1px solid @foterLine;
+        // border-bottom: 1px solid @foterLine;
+        height: 101px;
+    }
+
+    &__item {
+        width: 33.3%;
+        border-top: 1px solid @foterLine;
+        border-bottom: 1px solid @foterLine;
+
+        &:hover {
+            border-color: @contactsHover;
+        }
+
+        &:active {
+            background-color: @contactsActive;
+            border: transparent;
+
+        }
+        &:active .social__link {
+            opacity: 0.3;
+        }
+    }
+
+    &__item:not(:last-child) {
+        border-right: 1px solid @foterLine;
+        
+        &:hover {
+            border-color: @contactsHover;
+        }
+    }
+
+    &__link {
+        background-repeat: no-repeat;
+        background-position: center;
+        &--vk {
+            background-image: url('/img/vk-icon-big-1x.png');
+            @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+                background-image: url('/img/vk-icon-big-2x.png');
+                background-size: 23px 26px;
+            }
+        }
+
+        &--fb {
+            background-image: url('/img/facebook-icon-big-1x.png');
+            @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+                background-image: url('/img/facebook-icon-big-2x.png');
+                background-size: 18px 39px;
+            }
+        }
+
+        &--inst {
+            background-image: url('/img/insta-icon-big-1x.png');
+            @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+                background-image: url('/img/insta-icon-big-2x.png');
+                background-size: 36px 36px;
+            }
+        }
+
+    }
+}
+
+@media (min-width: @tablet) {
+    .social {
+        order: 3;
+        width: 100%;
+        margin-top: -1px;
+    }
+}
+
+@media (min-width: @desctop) {
+    .social {
+        order: 2;
+        width: 167px;
+        align-items: center;
+        margin-left: -17%;
+        margin-top: 34px;
+
+        &__title {
+            display: block;
+            font-weight: 400;
+            margin-bottom: 12px;
+        }
+
+        &__list {
+            width: 159px;
+            border: none;
+            justify-content: space-between;
+        }
+
+        &__item:not(:last-child){
+            width: 50px;
+        }
+
+        &__item {
+            width: 48px;
+            height: 48px;
+            border: 1px solid @foterLine;
+            &:hover {
+                border-color: @contactsHover;
+            }
+    
+            &:active {
+                background-color: @contactsActive;
+                border: transparent;
+            }
+        }
+
+        &__link {
+            &--vk {
+                background-image: url('/img/vk-icon-small-1x.png');
+                background-size: 15px 17px;
+                @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+                background-image: url('/img/vk-icon-small-2x.png');
+                }
+            }
+    
+            &--fb {
+                background-image: url('/img/facebook-icon-small-1x.png');
+                background-size: 10px 21px;
+                @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+                background-image: url('/img/facebook-icon-small-2x.png');
+                }
+            }
+    
+            &--inst {
+                background-image: url('/img/insta-icon-small-1x.png');
+                background-size: 19px 19px;
+                @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+                background-image: url('/img/insta-icon-small-2x.png');
+                }
+            }
+    
+        }
+    }
+}

@@ -1,0 +1,58 @@
+//  main: ../style.less
+
+.login {
+    margin-left: -160px;
+    width: 320px;
+    height: 408px;
+    padding-top: 33px;
+    box-shadow: 0 10px 50px 0px black;
+
+    &__container {
+        margin-left: 6.25%;
+        margin-right: 6.25%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+
+    &__title {
+        font-size: 30px;
+        line-height: 30px;
+        text-transform: uppercase;
+        margin: 0;
+        margin-bottom: 15px;
+    }
+
+    &__description {
+        margin: 0;
+        margin-bottom: 25px;
+    }
+
+    &__close {
+        display: none;
+    }
+}
+
+@media (min-width: @tablet) {
+    .login {
+        width: 460px;
+        height: 502px;
+        padding-top: 60px;
+        margin-left: -230px;
+
+        &__container {
+            margin-left: 8.3%;
+            margin-right: 8.3%;
+        }
+
+        &__title {
+            font-size: 40px;
+            margin-bottom: 19px;
+        }
+
+        &__close {
+            display: block;
+        }
+    }
+}

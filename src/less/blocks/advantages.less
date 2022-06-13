@@ -1,0 +1,210 @@
+//  main: ../style.less
+
+.advantages {
+    color: @advanteges__title;
+
+    &__wrapper {
+        padding-bottom: 47px;
+        background-color: @advantages-bg;
+        background-image: url('/img/advantagesTreangel.png');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: bottom;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 370px;
+        padding-top: 166px;
+
+        &--1,
+        &--2 {
+            display: none;
+        }
+    }
+
+    &__title {
+        font-size: 30px;
+        line-height: 30px;
+        font-weight: 700;
+        margin: 0;
+        margin-bottom: 11px;
+        text-transform: uppercase;
+        position: relative;
+
+        &--1::before,
+        &--2::before,
+        &--3::before {
+            content: '';
+            position: absolute;
+            top: -124px;
+            width: 95px;
+            height: 91px;
+        }
+
+        &--1::before {
+            background-image: url('/img/advantage-1-illustration-1x.png');
+            @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+                background-image: url('/img/advantage-1-illustration-2x.png');
+                background-size: 100%;
+            }
+        }
+        &--2::before {
+            background-image: url('/img/advantage-2-illustration-1x.png');
+            @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+                background-image: url('/img/advantage-2-illustration-2x.png');
+                background-size: 100%;
+            }
+        }
+        &--3::before {
+            background-image: url('/img/advantage-3-illustration-1x.png');
+            @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+                background-image: url('/img/advantage-3-illustration-2x.png');
+                background-size: 100%;
+            }
+        }
+
+    }
+
+    &__description {
+        font-size: 20px;
+        line-height: 27px;
+        width: 230px;
+        text-align: center;
+        margin: 0;
+    }
+
+    &__slider {
+        margin: 0 auto;
+        margin-top: -21px;
+    }
+
+}
+
+@media (min-width: @tablet) {
+    .advantages {
+        margin-left: 8.3%; 
+        margin-right: 8.3%; 
+
+        &__wrapper {
+            background-color: @mainBgTop;
+            background-image: url('/img/advantagessTreangelDesc.png');
+
+        }
+
+        &__list {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__item {
+            align-items: flex-start;
+            justify-content: center;
+            min-height: 50px;
+            padding-left: 160px;
+            padding-top: 40px;
+            margin-bottom: 42px;
+
+            &--1,
+            &--2 {
+                display: flex;
+            }
+
+            &--1 {
+                margin-bottom: 37px;
+            }
+
+        }
+
+        &__title {
+            margin-bottom: 14px;
+
+            &--2 {
+                margin-bottom: 11px;
+            }
+
+            &--3 {
+                margin-bottom: 13px;
+            }
+
+            &--1::before,
+            &--2::before,
+            &--3::before {
+                top: 4px;
+                left: -130px;
+            }
+        }
+
+        &__description {
+            width: 93%;
+            text-align: left;
+
+            & br {
+                display: none;
+            }
+        }
+
+        &__slider {
+            display: none;
+        }
+    }
+
+}
+
+@media (min-width: @desctop) {
+    .advantages {
+
+        &__wrapper {
+            padding-bottom: 61px;
+        }
+
+        &__list {
+            flex-direction: row;
+            justify-content: space-between;
+            padding-left: 65px;
+            padding-right: 65px;
+        }
+
+        &__item {
+            align-items: center;
+            min-height: 350px;
+            padding-left: 0;
+            padding-top: 203px;
+            
+        }
+
+        &__title {
+            margin-bottom: 14px;
+
+            &--2 {
+                margin-bottom: 14px;
+            }
+
+            &--3 {
+                margin-bottom: 14px;
+            }
+
+            &--1::before,
+            &--2::before,
+            &--3::before {
+                top: -124px;
+                left: 0;
+            }
+        }
+
+        &__description {
+            width: 230px;
+            text-align: center;
+
+            & br {
+                display: block;
+            }
+
+            &--last {
+                width: 237px;
+            }
+        }
+    }
+}

@@ -1,0 +1,50 @@
+//  main: ../style.less
+
+.modal {
+    position: fixed;
+    z-index: 999;
+    display: none;
+    color: @black;
+
+    background-color: @modalBg;
+
+    &__show {
+        display: block;
+        top: 135px;
+        left: 50%;
+    }
+
+    &__close {
+        width: 36px;
+        height: 36px;
+        position: absolute;
+        right: -109px;
+        top: 59px;
+
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+
+
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            top: 16px;
+            left: -1px;
+            width: 36px;
+            height: 3px;
+            background-color: @white;
+        }
+
+        &::before {
+            transform: rotate(45deg);
+        }
+
+        &::after {
+            transform: rotate(-45deg);
+        }
+    }
+
+  
+}

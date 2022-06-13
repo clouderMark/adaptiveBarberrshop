@@ -1,0 +1,30 @@
+//  main: ../style.less
+
+.page-footer {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 24px;
+ 
+    &__wrapper {
+        background-color: @page-footer;
+    }
+}
+
+@media (min-width: @tablet) {
+    .page-footer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: 8.3%;
+        margin-right: 8.3%;
+        padding-top: 18px;
+        padding-bottom: 32px;
+    }
+}
+
+
+@media (min-width: @desctop) {
+    .page-footer {
+        justify-content: space-between;
+        padding-right: 21px
+    }
+}

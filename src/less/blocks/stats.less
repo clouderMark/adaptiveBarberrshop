@@ -1,0 +1,233 @@
+//  main: ../style.less
+
+.stats {
+
+
+    &__header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 183px;
+        background-color: @white;
+        color: @black;
+        padding-top: 27px;
+    }
+
+    &__slogan {
+        font-size: 30px;
+        line-height: 30px;
+        text-transform: uppercase;
+        text-align: center;
+        display: block;
+        width: 200px;
+        margin: 0;
+    }
+
+    &__legend {
+        font-size: 20px;
+        line-height: 27px;
+        
+        &--header {
+            display: none;
+            margin-top: 12px;
+            margin-left: 4px;
+            opacity: 0.2;
+        }
+
+        &--bottom {
+            display: block;
+            text-align: center;
+            width: 100%;
+            color: darken(@white, 50%);
+            background-color: @legend--bottom;
+            padding-top: 8px;
+            padding-left: 3px;
+        }
+    }
+
+    &__intro {
+        width: 244px;
+        font-size: 20px;
+        line-height: 27px;
+        margin-top: 15px;
+    }
+
+    &__list {
+        width: 100%;
+        border-collapse: collapse;
+        line-height: 18px;
+
+
+        & tbody {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    &__value {
+        font-size: 40px;
+        line-height: 40px;
+        font-weight: 700;
+
+        & sup {
+            font-size: 23px;
+            line-height: 19px;
+        }
+    }
+
+    &__filed {
+        color: @filed;
+        text-align: right;
+    }
+
+    &__item {
+        height: 78px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 6.25%;
+        padding-right: 6.25%;
+
+
+        &--1 {
+            background-color: @table1;
+        }
+
+
+        &--2 {
+            background-color: @table2;
+        }
+
+
+        &--3 {
+            background-color: @table3;
+            height: 81px;
+        }
+
+
+        &--4 {
+            background-color: @table4;
+            height: 81px;
+        }
+    }
+
+}
+
+
+@media(min-width: @tablet) {
+    .stats {
+        min-width: 640px;
+        margin-left: 8.3%; //добавил для теста
+        margin-right: 8.3%; //
+
+        &__header {
+            height: 184px;
+            margin-top: -184px;
+            padding-top: 30px;
+            padding-left: 39px;
+            padding-right: 80px;
+            position: relative;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        &__slogan {
+            width: 205px;
+            font-size: 40px;
+            line-height: 40px;
+            text-transform: none;
+            text-align: inherit;
+        }
+
+        &__legend {
+
+            &--header {
+                display: block;
+            }
+
+            &--bottom {
+                display: none;
+            }
+        }
+
+        &__intro {
+            width: 206px;
+            margin-top: 3px;
+        }
+
+        &__list {
+
+            & tbody {
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+        }
+
+        &__item {
+            height: 159px;
+            width: 50%;
+            flex-direction: column;
+            align-items: flex-start;
+            padding-right: 0;
+            padding-top: 37px;
+            padding-bottom: 30px;
+            padding-left: 31px;
+
+            & br {
+                display: none;
+            }
+        }
+
+        &__value {
+            font-size: 72px;
+
+            & sup {
+                font-size: 40px;
+            }
+        }
+
+        &__filed {
+            font-size: 20px;
+            line-height: 27px;
+        }
+
+    }
+}
+
+@media (min-width: @desctop) {
+    .stats {
+        position: relative;
+        margin-top: -159px;
+        display: flex;
+        margin-left: 10%;
+        margin-right: 10%;
+
+        &__header {
+            margin-top: 0;
+            height: 318px;
+            min-width: 320px;
+            width: 33.3%;
+            
+            padding-right: 0;
+        }
+
+        &__slogan {
+            margin-bottom: 0px;
+        }
+
+        &__intro {
+            margin: 0;
+            margin-left: 4px;
+            margin-bottom: 44px;
+        }
+
+        &__legend {
+            &--header {
+                position: absolute;
+                bottom: 28px;
+            }
+        }
+    }
+}

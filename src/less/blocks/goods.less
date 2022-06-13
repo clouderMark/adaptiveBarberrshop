@@ -1,0 +1,111 @@
+//  main: ../style.less
+
+.goods {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 5.2%;
+
+    &__item {
+        height: 205px;
+        margin-bottom: 2px;
+        width: 70px;
+        background-repeat: no-repeat;
+        background-position: center 101px;
+        padding-top: 63px;
+        margin-right: 6.9%;
+        
+        &--1 {
+            background-image: url('/img/beard-1-1x.png');
+        }
+
+        &--2 {
+            background-image: url('/img/beard-2-1x.png');
+        }
+
+        &--3 {
+            background-image: url('/img/beard-3-1x.png');
+        }
+
+        &--4 {
+            background-image: url('/img/beard-4-1x.png');
+        }
+
+        &--5 {
+            background-image: url('/img/beard-5-1x.png');
+        }
+
+        &:hover .goods__type::before,
+        &:hover .goods__input:checked + .goods__type::after {
+            border-color: @showlAllHover;
+        }
+
+        &:active .goods__type::before {
+            background-color: @showlAllHover;
+        }
+    }
+
+    &__type {
+        display: flex;
+        justify-content: center;
+        position: relative; 
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: -61px;
+            left: 9px;
+
+            width: 51px;
+            height: 51px;
+            border: 1px solid @goodsBg;
+            border-radius: 50%;
+            background-color: @white;
+        }
+    }
+
+    &__input:checked + &__type::after {
+        content: '';
+        position: absolute;
+        width: 19px;
+        height: 19px;
+        border: 1px solid @goodsBg;
+        border-radius: 50%;
+        background-color: @white;
+        top: -45px;
+        left: 25px;
+    }
+}
+
+@media (min-width: @tablet) {
+    .goods {
+        padding-left: 2.3%;
+        padding-right: 2.3%;
+        justify-content: space-between;
+
+        font-size: 24px;
+
+        &__item {
+            margin: 0;
+            padding-top: 80px;
+            height: 244px;
+            background-position: center 137px;
+        }
+
+        &__type {
+            &::before {
+                top: -78px;
+            }
+        }
+
+        &__input:checked + &__type::after {
+            top: -62px;
+        }
+    }
+}
+
+@media (min-width: @desctop) {
+    .goods {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}

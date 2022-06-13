@@ -1,0 +1,36 @@
+//  main: ../style.less
+
+.slider {
+  width: 79px;
+  display: flex;
+  justify-content: space-between;
+
+  &__item {
+    display: block;
+    width: 8px;
+    height: 8px;
+    border: 1px solid;
+    transform: rotate(45deg);
+    cursor: pointer;
+  }
+
+  input:focus + .slider__item {
+    outline: 1px solid white;
+    outline-offset: 2px;
+  }
+
+  input:checked + .slider__item {
+    background-color: @white;
+  }
+
+  &--reviews {
+    input:checked + .slider__item {
+      background-color: @sliderRadio;
+    }
+    input:focus + .slider__item {
+      outline: 1px solid @sliderRadio;
+      outline-offset: 2px;
+    }
+  }
+
+}

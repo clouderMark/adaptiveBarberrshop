@@ -1,0 +1,81 @@
+//  main: ../style.less
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 32px;
+    line-height: 27px;
+
+    &__title {
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+
+    &__text {
+        width: 203px;
+        text-align: center;
+        margin: 0;
+        margin-bottom: 18px;
+    }
+
+    &__phone {
+        margin-bottom: 27px;
+        border-color: @foterLine;
+
+        &:hover {
+            border-color: @contactsHover;
+        }
+
+        &:active {
+            background-color: @contactsActive;
+            border-color: transparent;
+            color: rgba(255,255,255,0.4);
+        }
+
+        & span {
+            display: none;
+        }
+    }
+}
+
+@media (min-width: @tablet) {
+    .contacts {
+        align-items: flex-start;
+        width: 70%;
+
+        &__title {
+            text-transform: uppercase;
+        }
+
+        &__text {
+            width: 321px;
+            margin-bottom: 0;
+            margin-left: -4px;
+        }
+
+        &__phone {
+            border: none;
+            justify-content: flex-start;
+            align-items: flex-start;
+            font-weight: 400;
+
+            & span {
+                display: block;
+                text-transform: none;
+            }
+        }
+    }
+}
+
+@media (min-width: @desctop) {
+    .contacts {
+        width: 321px;
+        margin-left: 22px;
+
+        &__title {
+            margin-left: 0;
+        }
+    }
+
+}

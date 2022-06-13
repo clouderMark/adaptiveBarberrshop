@@ -1,0 +1,204 @@
+//  main: ../style.less
+
+.news {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -1px; //задвинул линию от стрелки
+    margin-left: 6.25%;
+    margin-right: 6.25%;
+    padding-top: 32px;
+
+    line-height: 27px;
+    color: @black;
+
+    &__wrapper {
+        background-color: @newsBg;
+        border-bottom: 1px solid @newsLine;
+
+    }
+
+    &__title {
+        text-transform: uppercase;
+        font-size: 30px;
+        line-height: 30px;
+        margin: 0;
+        margin-bottom: 28px;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        width: 280px;
+        margin-bottom: 34px;
+
+        &--last {
+            display: none;
+        }
+    }
+
+    &__date {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        position: relative;
+
+        width: 50px;
+        height: 50px;
+        margin-top: 10px;
+        padding-top: 7px;
+        background-color: @black;
+
+        font-size: 16px;
+        color: @white;
+
+        & b {
+            font-size: 30px;
+            margin-bottom: -8px;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            width: 0;
+            height: 0;
+            border: 0 solid transparent;
+            border-left-width: 25px;
+            border-right-width: 25px;
+            border-top: 10px solid @black;
+        }
+    }
+
+    &__description {
+        order: 1;
+        width: 211px;
+        margin: 0;
+
+        &:hover+.news__date {
+            background-color: @navTabletHover;
+        }
+
+        &:hover+.news__date::after {
+            border-top-color: @navTabletHover;
+        }
+
+        &:hover {
+            color: @navTabletHover;
+            text-decoration: underline;
+        }
+        &:active+.news__date {
+            background-color: @navMobileActive;
+            color: rgba(255,255,255,0.3);
+        }
+
+        &:active+.news__date::after {
+            border-top-color: @navMobileActive;
+        }
+
+        &:active {
+            color: @navMobileActive;
+            text-decoration: underline;
+        }
+    }
+
+    &__to-all {
+        border-color: @newsLine;
+        margin-top: -11px;
+        margin-bottom: 29px;
+
+        &:hover {
+            border-color: @showlAllHover;
+        }
+
+        &:active {
+            background-color: @showlAllHover;
+            color: rgba(0,0,0,0.4);
+        }
+    }
+}
+
+@media(min-width: @tablet) {
+    .news {
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: 8.3%;
+        margin-right: 8.3%;
+        padding-top: 0px;
+
+        &__title {
+            display: block;
+            width: 300px;
+            margin-bottom: 0px;
+            margin-top: 11px;
+
+            text-align: inherit;
+            font-size: 40px;
+        }
+
+        &__list {
+            order: 2;
+            display: flex;
+            justify-content: space-around;
+
+            width: 100%;
+            margin-top: 18px;
+            padding-right: 21px;
+            margin-bottom: 1px;
+        }
+
+        &__item {
+
+            &--first {
+                margin-left: -18px;
+            }
+        }
+
+        &__to-all {
+            margin-left: auto;
+            width: 160px;
+            margin-top: 42px;
+        }
+
+        &__description {
+            & span {
+                display: none;
+            }
+        }
+
+    }
+}
+
+@media(min-width: @desctop) {
+    .news {
+        &__title {
+            margin-top: 24px;
+            margin-left: 90px;
+        }
+
+        &__to-all {
+            margin-top: 54px;
+            margin-right: 20px;
+        }
+
+        &__list {
+            justify-content: space-between;
+            padding-left: 20px;
+            padding-right: 60px;
+            margin-top: 20px;
+        }
+
+        &__item {
+
+            &--first {
+                margin-left: 0;
+                ;
+            }
+
+            &--last {
+                display: flex;
+            }
+        }
+    }
+}

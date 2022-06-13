@@ -1,0 +1,119 @@
+//  main: ../style.less
+
+.page-header {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    &__logo {
+        order: 2;
+        background-color: @headerLogo;
+        width: 100%;
+        min-width: 320px;
+        height: 85px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 8px;
+        padding-top: 8px;
+
+        & img {
+            width: 100%;
+        }
+    }
+
+    &__toggle {
+        order: 3;
+    }
+}
+
+@media(min-width: @tablet) {
+    .page-header {
+        height: 470px;
+        align-items: center;
+        background-color: @black;
+        background-image: url('/img/back-tablet-1x.jpg');
+        background-position: center;
+
+        @media (min-resolution: @retina-dpi),
+        (min-resolution: @retina-dppx) {
+            background-image: url('/img/back-tablet-2x.jpg');
+            background-size: 100%;
+        }
+
+        &__logo {
+            width: 370px;
+            height: 101px;
+            margin-top: 38px;
+            padding-top: 7px;
+            padding-left: 0;
+            background-color: transparent;
+        }
+
+        &--photo {
+            height: 284px;
+
+            background-image: url('/img/angleHeader-1x.png'),
+                url('/img/back-tablet-photo-1x.jpg');
+            background-size: auto auto, 100% 100%;
+            background-position: bottom, 0 13px;
+            background-repeat: no-repeat;
+
+            @media (min-resolution: @retina-dpi),
+            (min-resolution: @retina-dppx) {
+                background-image: url('/img/angleHeader-1x.png'),
+                    url('/img/back-tablet-photo-2x.jpg');
+                background-position: bottom, 0 0;
+                // background-size: 100%;
+            }
+
+            .page-header__logo {
+                margin-left: 10px;
+            }
+        }
+
+    }
+}
+
+@media(min-width: @desctop) {
+    .page-header {
+        height: 720px;
+        background-image: url('/img/back-desktop-1x.jpg');
+
+        @media (min-resolution: @retina-dpi),
+        (min-resolution: @retina-dppx) {
+            background-image: url('/img/back-desktop-2x.jpg');
+            background-size: 100%;
+
+        }
+
+        &__logo {
+            height: 153px;
+            margin-top: 53px;
+            padding-top: 12px;
+            padding-left: 1px;
+        }
+
+        &--photo {
+            height: 378px;
+            background-image: url('/img/angle-photo-header.png'),
+                url('/img/back-desktop-1x.jpg');
+            background-position: bottom, 0 -2px;
+            background-size: auto auto;
+
+            @media (min-resolution: @retina-dpi),
+            (min-resolution: @retina-dppx) {
+                background-image: url('/img/angle-photo-header.png'),
+                    url('/img/back-desktop-2x.jpg');
+                background-size: 100%;
+
+            }
+
+            .page-header__logo {
+                margin-left: 0;
+                margin-top: 52px;
+            }
+
+        }
+    }
+}

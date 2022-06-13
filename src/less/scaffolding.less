@@ -1,0 +1,31 @@
+//  main: style.less
+
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-width: @mobile;
+    // width: @mobile;
+    font-family: 'PT Sans Narrow', 'Arial', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    color: @white;
+    background-color: @black;
+
+}
+
+@media(min-width: @tablet) {
+    body {
+        min-width: @tablet;
+        // width: @tablet// временно для макета
+    }
+}
+
+@media(min-width: @desctop) {
+    body {
+        min-width: @desctop;
+        // width: @desctop;
+    }
+}

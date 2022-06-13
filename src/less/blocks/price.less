@@ -1,0 +1,148 @@
+//  main: ../style.less
+
+.price {
+    margin-left: 6.25%;
+    margin-right: 6.25%;
+    padding-top: 37px;
+    padding-bottom: 54px;
+
+    &__wrapper {
+        background-color: @table3;
+        background-image: url('/img/reviewsTreangelMobile.png');
+        background-position: bottom;
+        background-repeat: no-repeat;
+    }
+
+    &__title {
+        margin: 0;
+        font-size: 30px;
+        line-height: 30px;
+        text-transform: uppercase;
+        margin: 0;
+        margin-left: 21%;
+        margin-bottom: 20px;
+    }
+
+    &__list {
+        font-size: 20px;
+        line-height: 27px;
+        border-collapse: collapse;
+        width: 100%;
+        margin-bottom: 11px;
+    }
+
+    &__count {
+        display: none;
+    }
+
+    &__service {
+        font-weight: 700;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 14px;
+
+        & .price__option-mobile {
+            font-weight: 400;
+        }
+    }
+
+    &__option {
+        display: none;
+    }
+
+    &__value {
+        vertical-align: top;
+        text-align: right;
+    }
+}
+@media (min-width: @tablet) {
+    .price {
+        margin-left: 8.3%;
+        margin-right: 8.3%;
+        padding-top: 50px;
+        padding-bottom: 56px;
+
+        &__wrapper {
+            background-image: none;
+        }
+
+        &__title {
+            font-size: 40px;
+            margin-left: 0;
+            margin-bottom: 53px;
+        }
+
+        &__list {
+            margin-bottom: 9px;
+        }
+
+        &__item td {
+            border: 1px solid @tableBorder;
+        }
+
+        &__count {
+            display: table-cell;
+            color: @tableCount;
+            width: 11%;
+            height: 55px;
+            text-align: center;
+        }
+
+        &__service {
+            display: table-cell;
+            width: 39%;
+            padding-left: 20px;
+    
+            & .price__option-mobile {
+                display: none;
+            }
+        }
+
+        &__option {
+            display: table-cell;
+            width: 25%;
+            padding-left: 20px;
+        }
+
+        &__value {
+            text-align: left;
+            vertical-align: middle;
+            padding-left: 20px;
+        }
+    }
+}
+
+@media (min-width: @desctop) {
+    .price {
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-left: 10%;
+        margin-right: 10%;
+        padding-top: 84px;
+        padding-bottom: 73px;
+
+
+        &__title {
+            width: 90%;
+        }
+
+        &__list {
+            width: 65.6%;
+        }
+
+        &__count {
+            width: 11.4%;
+        }
+
+        &__service {
+            width: 39.4%;
+        }
+
+        &__option {
+            width: 25.3%;
+        }
+    }
+}
+
