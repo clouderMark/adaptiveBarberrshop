@@ -45,5 +45,7 @@
     "webpack": "^5.73.0",
     "webpack-stream": "^7.0.0"
   },
-  "homepage" : "https://cloudermark.github.io/adaptiveBarberrshop/"
+  "dependencies": {
+    "gh-pages": "^4.0.0"
+  }
 }
