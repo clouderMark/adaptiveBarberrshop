@@ -49,6 +49,7 @@ const build = gulp.series(reset, mainTasks, gulp.parallel(watcher, server));//gu
 const deployZIP = gulp.series(reset, mainTasks, zip);
 const deployFTP = gulp.series(reset, mainTasks, ftp);
 
+
 //Экспорт сценариев
 export { dev }
 export { build }
@@ -57,3 +58,4 @@ export { deployFTP }
 
 //Выполнение сценария по умолчанию
 gulp.task('default', dev); 
+

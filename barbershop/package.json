@@ -9,19 +9,23 @@
     "build": "gulp build --build",
     "zip": "gulp deployZIP --build",
     "deploy": "gulp deployFTP --build",
+    "gh-pages": "gh-pages -d dist",
     "svgSprive": "gulp svgSprive"
   },
   "author": "",
   "license": "ISC",
+  "homepage": "https://cloudermark.github.io/adaptiveBarberrshop/",
   "devDependencies": {
     "browser-sync": "^2.27.10",
     "del": "^6.1.1",
+    "gh-pages": "^4.0.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-clean-css": "^4.3.0",
     "gulp-file-include": "^2.3.0",
     "gulp-fonter": "^0.3.0",
     "gulp-fonter-unx": "^0.3.0",
+    "gulp-gh-pages": "^0.5.4",
     "gulp-group-css-media-queries": "^1.2.2",
     "gulp-if": "^3.0.0",
     "gulp-imagemin": "^8.0.0",
@@ -44,8 +48,5 @@
     "webp-converter": "2.2.3",
     "webpack": "^5.73.0",
     "webpack-stream": "^7.0.0"
-  },
-  "dependencies": {
-    "gh-pages": "^4.0.0"
   }
 }
