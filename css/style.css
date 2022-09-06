@@ -2,14 +2,14 @@
   font-weight: normal;
   font-family: 'PT Sans Narrow';
   font-style: normal;
-  src: url('/fonts/ptsansnarrow.woff2') format('woff2'), url('/fonts/ptsansnarrow.woff') format('woff');
+  src: url('../fonts/ptsansnarrow.woff2') format('woff2'), url('../fonts/ptsansnarrow.woff') format('woff');
 }
 
 @font-face {
   font-weight: bold;
   font-family: 'PT Sans Narrow';
   font-style: normal;
-  src: url('/fonts/ptsansnarrowbold.woff2') format('woff2'), url('/fonts/ptsansnarrowbold.woff') format('woff');
+  src: url('../fonts/ptsansnarrowbold.woff2') format('woff2'), url('../fonts/ptsansnarrowbold.woff') format('woff');
 }
 
 body {
@@ -479,7 +479,7 @@ textarea:active {
 }
 
 .no-webp .advantages__wrapper {
-  background-image: url('/img/advantagesTreangel.png'); }
+  background-image: url('../img/advantagesTreangel.png'); }
 
 .advantages__wrapper {
   padding-bottom: 47px;
@@ -530,13 +530,13 @@ textarea:active {
 }
 
 .no-webp .advantages__title--1::before {
-  background-image: url('/img/advantage-1-illustration-1x.png'); }
+  background-image: url('../img/advantage-1-illustration-1x.png'); }
 
 .no-webp .advantages__title--2::before {
-  background-image: url('/img/advantage-2-illustration-1x.png'); }
+  background-image: url('../img/advantage-2-illustration-1x.png'); }
 
 .no-webp .advantages__title--3::before {
-  background-image: url('/img/advantage-3-illustration-1x.png'); }
+  background-image: url('../img/advantage-3-illustration-1x.png'); }
 
 .advantages__description {
   font-size: 20px;
@@ -704,7 +704,7 @@ textarea:active {
 }
 
 .no-webp .reviews__wrapper {
-  background-image: url('/img/reviewsTreangelMobile.png'); }
+  background-image: url('../img/reviewsTreangelMobile.png'); }
 
 .reviews__wrapper {
   padding-bottom: 35px;
@@ -898,13 +898,13 @@ textarea:active {
 }
 
 .no-webp .social__link--vk {
-  background-image: url('/img/vk-icon-big-1x.png'); }
+  background-image: url('../img/vk-icon-big-1x.png'); }
 
 .no-webp .social__link--fb {
-  background-image: url('/img/facebook-icon-big-1x.png'); }
+  background-image: url('../img/facebook-icon-big-1x.png'); }
 
 .no-webp .social__link--inst {
-  background-image: url('/img/insta-icon-big-1x.png'); }
+  background-image: url('../img/insta-icon-big-1x.png'); }
 
 .copyright {
   display: -webkit-box;
@@ -1212,7 +1212,7 @@ textarea:active {
 }
 
 .no-webp .works__wrapper {
-  background-image: url('/img/angel-photo-bottom-mobile-1x.png'); }
+  background-image: url('../img/angel-photo-bottom-mobile-1x.png'); }
 
 .works__wrapper {
   background-color: #f8f5f2;
@@ -1344,8 +1344,8 @@ textarea:active {
 }
 
 .no-webp .works__goods--scissors::before {
-  background-image: -webkit-image-set(url('/img/scissors-icon@2x.png') 2x, url('/img/scissors-icon@1x.png') 1x);
-  background-image: image-set(url('/img/scissors-icon@2x.png') 2x, url('/img/scissors-icon@1x.png') 1x); }
+  background-image: -webkit-image-set(url('../img/scissors-icon@2x.png') 2x, url('../img/scissors-icon@1x.png') 1x);
+  background-image: image-set(url('../img/scissors-icon@2x.png') 2x, url('../img/scissors-icon@1x.png') 1x); }
 
 .works__goods--scissors::before {
   content: '';
@@ -1357,8 +1357,8 @@ textarea:active {
 }
 
 .no-webp .works__goods--mustache::before {
-  background-image: -webkit-image-set(url('/img/mustache-icon@2x.png') 2x, url('/img/mustache-icon@1x.png') 1x);
-  background-image: image-set(url('/img/mustache-icon@2x.png') 2x, url('/img/mustache-icon@1x.png') 1x); }
+  background-image: -webkit-image-set(url('../img/mustache-icon@2x.png') 2x, url('../img/mustache-icon@1x.png') 1x);
+  background-image: image-set(url('../img/mustache-icon@2x.png') 2x, url('../img/mustache-icon@1x.png') 1x); }
 
 .works__goods--mustache::before {
   content: '';
@@ -1370,8 +1370,8 @@ textarea:active {
 }
 
 .no-webp .works__goods--beard::before {
-  background-image: -webkit-image-set(url('/img/beard-icon@2x.png') 2x, url('/img/beard-icon@1x.png') 1x);
-  background-image: image-set(url('/img/beard-icon@2x.png') 2x, url('/img/beard-icon@1x.png') 1x); }
+  background-image: -webkit-image-set(url('../img/beard-icon@2x.png') 2x, url('../img/beard-icon@1x.png') 1x);
+  background-image: image-set(url('../img/beard-icon@2x.png') 2x, url('../img/beard-icon@1x.png') 1x); }
 
 .works__goods--beard::before {
   content: '';
@@ -1416,7 +1416,7 @@ textarea:active {
 }
 
 .no-webp .price__wrapper {
-  background-image: url('/img/reviewsTreangelMobile.png'); }
+  background-image: url('../img/reviewsTreangelMobile.png'); }
 
 .price__wrapper {
   background-color: #353535;
@@ -1489,7 +1489,7 @@ textarea:active {
 }
 
 .no-webp .sale__time::before {
-  background-image: url('/img/clock-mobile-1x.png'); }
+  background-image: url('../img/clock-mobile-1x.png'); }
 
 .sale__time::before {
   content: '';
@@ -1668,19 +1668,19 @@ textarea:active {
 }
 
 .no-webp .goods__item--1 {
-  background-image: url('/img/beard-1-1x.png'); }
+  background-image: url('../img/beard-1-1x.png'); }
 
 .no-webp .goods__item--2 {
-  background-image: url('/img/beard-2-1x.png'); }
+  background-image: url('../img/beard-2-1x.png'); }
 
 .no-webp .goods__item--3 {
-  background-image: url('/img/beard-3-1x.png'); }
+  background-image: url('../img/beard-3-1x.png'); }
 
 .no-webp .goods__item--4 {
-  background-image: url('/img/beard-4-1x.png'); }
+  background-image: url('../img/beard-4-1x.png'); }
 
 .no-webp .goods__item--5 {
-  background-image: url('/img/beard-5-1x.png'); }
+  background-image: url('../img/beard-5-1x.png'); }
 
 .goods__item:hover .goods__type::before,
 .goods__item:hover .goods__input:checked + .goods__type::after {
@@ -1893,7 +1893,7 @@ textarea:active {
   }
 
   .no-webp .page-header {
-    background-image: url('/img/back-tablet-1x.jpg'); }
+    background-image: url('../img/back-tablet-1x.jpg'); }
 
   .page-header {
     height: 470px;
@@ -1914,7 +1914,7 @@ textarea:active {
   }
 
   .no-webp .page-header--photo {
-    background-image: url('/img/angleHeader-1x.png'), url('/img/back-tablet-photo-1x.jpg'); }
+    background-image: url('../img/angleHeader-1x.png'), url('../img/back-tablet-photo-1x.jpg'); }
 
   .page-header--photo {
     height: 284px;
@@ -2003,7 +2003,7 @@ textarea:active {
   }
 
   .no-webp .user-list__login::before {
-    background-image: url('/img/login-1x.png'); }
+    background-image: url('../img/login-1x.png'); }
 
   .user-list__login::before {
     content: '';
@@ -2124,7 +2124,7 @@ textarea:active {
   }
 
   .no-webp .advantages__wrapper {
-    background-image: url('/img/advantagessTreangelDesc.png'); }
+    background-image: url('../img/advantagessTreangelDesc.png'); }
 
   .advantages__wrapper {
     background-color: #353535;
@@ -2364,7 +2364,7 @@ textarea:active {
   }
 
   .no-webp .reviews__button--back::before, .no-webp .reviews__button--next::before {
-    background-image: url('/img/arrow.png'); }
+    background-image: url('../img/arrow.png'); }
 
   .reviews__button--back::before,
   .reviews__button--next::before {
@@ -2546,7 +2546,7 @@ textarea:active {
   }
 
   .no-webp .works__wrapper {
-    background-image: url('/img/angle-works-table.png'); }
+    background-image: url('../img/angle-works-table.png'); }
 
   .works__wrapper {
     padding-bottom: 11px;
@@ -2753,7 +2753,7 @@ textarea:active {
   }
 
   .no-webp .sale__time::before {
-    background-image: url('/img/clock-tablet-1x.png'); }
+    background-image: url('../img/clock-tablet-1x.png'); }
 
   .sale__time::before {
     width: 72px;
@@ -3041,27 +3041,27 @@ textarea:active {
 
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 768px) and (-o-min-device-pixel-ratio: 3/2), (min-width: 768px) and (min-resolution: 144dpi), (min-width: 768px) and (min-resolution: 1.5dppx) {
   .no-webp .page-header {
-    background-image: url('/img/back-tablet-2x.jpg'); }
+    background-image: url('../img/back-tablet-2x.jpg'); }
   .page-header {
     background-size: 100%;
   }
 
   .no-webp .page-header--photo {
-    background-image: url('/img/angleHeader-1x.png'), url('/img/back-tablet-photo-2x.jpg'); }
+    background-image: url('../img/angleHeader-1x.png'), url('../img/back-tablet-photo-2x.jpg'); }
 
   .page-header--photo {
     background-position: bottom, 0 0;
   }
 
   .no-webp .user-list__login::before {
-    background-image: url('/img/login-2x.png'); }
+    background-image: url('../img/login-2x.png'); }
 
   .user-list__login::before {
     background-size: 99%;
   }
 
   .no-webp .reviews__button--back::before, .no-webp .reviews__button--next::before {
-    background-image: url('/img/arrow2x.png'); }
+    background-image: url('../img/arrow2x.png'); }
 
   .reviews__button--back::before,
   .reviews__button--next::before {
@@ -3069,7 +3069,7 @@ textarea:active {
   }
 
   .no-webp .sale__time::before {
-    background-image: url('/img/clock-tablet-2x.png'); }
+    background-image: url('../img/clock-tablet-2x.png'); }
 }
 
 @media (min-width: 1200px) {
@@ -3078,7 +3078,7 @@ textarea:active {
   }
 
   .no-webp .page-header {
-    background-image: url('/img/back-desktop-1x.jpg'); }
+    background-image: url('../img/back-desktop-1x.jpg'); }
 
   .page-header {
     height: 720px;
@@ -3092,7 +3092,7 @@ textarea:active {
   }
 
   .no-webp .page-header--photo {
-    background-image: url('/img/angle-photo-header.png'), url('/img/back-desktop-1x.jpg'); }
+    background-image: url('../img/angle-photo-header.png'), url('../img/back-desktop-1x.jpg'); }
 
   .page-header--photo {
     height: 378px;
@@ -3396,21 +3396,21 @@ textarea:active {
   }
 
   .no-webp .social__link--vk {
-    background-image: url('/img/vk-icon-small-1x.png'); }
+    background-image: url('../img/vk-icon-small-1x.png'); }
 
   .social__link--vk {
     background-size: 15px 17px;
   }
 
   .no-webp .social__link--fb {
-    background-image: url('/img/facebook-icon-small-1x.png'); }
+    background-image: url('../img/facebook-icon-small-1x.png'); }
 
   .social__link--fb {
     background-size: 10px 21px;
   }
 
   .no-webp .social__link--inst {
-    background-image: url('/img/insta-icon-small-1x.png'); }
+    background-image: url('../img/insta-icon-small-1x.png'); }
 
   .social__link--inst {
     background-size: 19px 19px;
@@ -3588,7 +3588,7 @@ textarea:active {
   }
 
   .no-webp .sale__time::before {
-    background-image: url('/img/clock-desctop-1x.png'); }
+    background-image: url('../img/clock-desctop-1x.png'); }
 
   .sale__time::before {
     width: 142px;
@@ -3688,270 +3688,270 @@ textarea:active {
 
 @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1200px) and (-o-min-device-pixel-ratio: 3/2), (min-width: 1200px) and (min-resolution: 144dpi), (min-width: 1200px) and (min-resolution: 1.5dppx) {
   .no-webp .page-header {
-    background-image: url('/img/back-desktop-2x.jpg'); }
+    background-image: url('../img/back-desktop-2x.jpg'); }
   .page-header {
     background-size: 100%;
   }
 
   .no-webp .page-header--photo {
-    background-image: url('/img/angle-photo-header.png'), url('/img/back-desktop-2x.jpg'); }
+    background-image: url('../img/angle-photo-header.png'), url('../img/back-desktop-2x.jpg'); }
 
   .page-header--photo {
     background-size: 100%;
   }
 
   .no-webp .social__link--vk {
-    background-image: url('/img/vk-icon-small-2x.png'); }
+    background-image: url('../img/vk-icon-small-2x.png'); }
 
   .no-webp .social__link--fb {
-    background-image: url('/img/facebook-icon-small-2x.png'); }
+    background-image: url('../img/facebook-icon-small-2x.png'); }
 
   .no-webp .social__link--inst {
-    background-image: url('/img/insta-icon-small-2x.png'); }
+    background-image: url('../img/insta-icon-small-2x.png'); }
 
   .no-webp .sale__time::before {
-    background-image: url('/img/clock-desctop-2x.png'); }
+    background-image: url('../img/clock-desctop-2x.png'); }
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .no-webp .advantages__title--1::before {
-    background-image: url('/img/advantage-1-illustration-2x.png'); }
+    background-image: url('../img/advantage-1-illustration-2x.png'); }
   .advantages__title--1::before {
     background-size: 100%;
   }
 
   .no-webp .advantages__title--2::before {
-    background-image: url('/img/advantage-2-illustration-2x.png'); }
+    background-image: url('../img/advantage-2-illustration-2x.png'); }
 
   .advantages__title--2::before {
     background-size: 100%;
   }
 
   .no-webp .advantages__title--3::before {
-    background-image: url('/img/advantage-3-illustration-2x.png'); }
+    background-image: url('../img/advantage-3-illustration-2x.png'); }
 
   .advantages__title--3::before {
     background-size: 100%;
   }
 
   .no-webp .social__link--vk {
-    background-image: url('/img/vk-icon-big-2x.png'); }
+    background-image: url('../img/vk-icon-big-2x.png'); }
 
   .social__link--vk {
     background-size: 23px 26px;
   }
 
   .no-webp .social__link--fb {
-    background-image: url('/img/facebook-icon-big-2x.png'); }
+    background-image: url('../img/facebook-icon-big-2x.png'); }
 
   .social__link--fb {
     background-size: 18px 39px;
   }
 
   .no-webp .social__link--inst {
-    background-image: url('/img/insta-icon-big-2x.png'); }
+    background-image: url('../img/insta-icon-big-2x.png'); }
 
   .social__link--inst {
     background-size: 36px 36px;
   }
 
   .no-webp .sale__time::before {
-    background-image: url('/img/clock-mobile-2x.png'); }
+    background-image: url('../img/clock-mobile-2x.png'); }
 
   .sale__time::before {
     background-size: 100%;
   }
 }
 
-.webp .advantages__wrapper { background-image: url(/img/advantagesTreangel.webp); }
+.webp .advantages__wrapper { background-image: url(../img/advantagesTreangel.webp); }
 
-.webp .advantages__title--1::before { background-image: url(/img/advantage-1-illustration-1x.webp); }
+.webp .advantages__title--1::before { background-image: url(../img/advantage-1-illustration-1x.webp); }
 
-.webp .advantages__title--2::before { background-image: url(/img/advantage-2-illustration-1x.webp); }
+.webp .advantages__title--2::before { background-image: url(../img/advantage-2-illustration-1x.webp); }
 
-.webp .advantages__title--3::before { background-image: url(/img/advantage-3-illustration-1x.webp); }
+.webp .advantages__title--3::before { background-image: url(../img/advantage-3-illustration-1x.webp); }
 
-.webp .reviews__wrapper { background-image: url(/img/reviewsTreangelMobile.webp); }
+.webp .reviews__wrapper { background-image: url(../img/reviewsTreangelMobile.webp); }
 
-.webp .social__link--vk { background-image: url(/img/vk-icon-big-1x.webp); }
+.webp .social__link--vk { background-image: url(../img/vk-icon-big-1x.webp); }
 
-.webp .social__link--fb { background-image: url(/img/facebook-icon-big-1x.webp); }
+.webp .social__link--fb { background-image: url(../img/facebook-icon-big-1x.webp); }
 
-.webp .social__link--inst { background-image: url(/img/insta-icon-big-1x.webp); }
+.webp .social__link--inst { background-image: url(../img/insta-icon-big-1x.webp); }
 
-.webp .works__wrapper { background-image: url(/img/angel-photo-bottom-mobile-1x.webp); }
+.webp .works__wrapper { background-image: url(../img/angel-photo-bottom-mobile-1x.webp); }
 
-.webp .works__goods--scissors::before { background-image: -webkit-image-set(url(/img/scissors-icon@2x.webp) 2x, url(/img/scissors-icon@1x.webp) 1x); background-image: image-set(url(/img/scissors-icon@2x.webp) 2x, url(/img/scissors-icon@1x.webp) 1x); }
+.webp .works__goods--scissors::before { background-image: -webkit-image-set(url(../img/scissors-icon@2x.webp) 2x, url(../img/scissors-icon@1x.webp) 1x); background-image: image-set(url(../img/scissors-icon@2x.webp) 2x, url(../img/scissors-icon@1x.webp) 1x); }
 
-.webp .works__goods--mustache::before { background-image: -webkit-image-set(url(/img/mustache-icon@2x.webp) 2x, url(/img/mustache-icon@1x.webp) 1x); background-image: image-set(url(/img/mustache-icon@2x.webp) 2x, url(/img/mustache-icon@1x.webp) 1x); }
+.webp .works__goods--mustache::before { background-image: -webkit-image-set(url(../img/mustache-icon@2x.webp) 2x, url(../img/mustache-icon@1x.webp) 1x); background-image: image-set(url(../img/mustache-icon@2x.webp) 2x, url(../img/mustache-icon@1x.webp) 1x); }
 
-.webp .works__goods--beard::before { background-image: -webkit-image-set(url(/img/beard-icon@2x.webp) 2x, url(/img/beard-icon@1x.webp) 1x); background-image: image-set(url(/img/beard-icon@2x.webp) 2x, url(/img/beard-icon@1x.webp) 1x); }
+.webp .works__goods--beard::before { background-image: -webkit-image-set(url(../img/beard-icon@2x.webp) 2x, url(../img/beard-icon@1x.webp) 1x); background-image: image-set(url(../img/beard-icon@2x.webp) 2x, url(../img/beard-icon@1x.webp) 1x); }
 
-.webp .price__wrapper { background-image: url(/img/reviewsTreangelMobile.webp); }
+.webp .price__wrapper { background-image: url(../img/reviewsTreangelMobile.webp); }
 
-.webp .sale__time::before { background-image: url(/img/clock-mobile-1x.webp); }
+.webp .sale__time::before { background-image: url(../img/clock-mobile-1x.webp); }
 
-.webp .goods__item--1 { background-image: url(/img/beard-1-1x.webp); }
+.webp .goods__item--1 { background-image: url(../img/beard-1-1x.webp); }
 
-.webp .goods__item--2 { background-image: url(/img/beard-2-1x.webp); }
+.webp .goods__item--2 { background-image: url(../img/beard-2-1x.webp); }
 
-.webp .goods__item--3 { background-image: url(/img/beard-3-1x.webp); }
+.webp .goods__item--3 { background-image: url(../img/beard-3-1x.webp); }
 
-.webp .goods__item--4 { background-image: url(/img/beard-4-1x.webp); }
+.webp .goods__item--4 { background-image: url(../img/beard-4-1x.webp); }
 
-.webp .goods__item--5 { background-image: url(/img/beard-5-1x.webp); }
+.webp .goods__item--5 { background-image: url(../img/beard-5-1x.webp); }
 
 @media (min-width: 768px) {
 
-  .webp .page-header { background-image: url(/img/back-tablet-1x.webp); }
+  .webp .page-header { background-image: url(../img/back-tablet-1x.webp); }
 }
 
 @media (min-width: 768px) {
 
-  .webp .page-header--photo { background-image: url(/img/angleHeader-1x.webp), url(/img/back-tablet-photo-1x.webp); }
+  .webp .page-header--photo { background-image: url(../img/angleHeader-1x.webp), url(../img/back-tablet-photo-1x.webp); }
 }
 
 @media (min-width: 768px) {
 
-  .webp .user-list__login::before { background-image: url(/img/login-1x.webp); }
+  .webp .user-list__login::before { background-image: url(../img/login-1x.webp); }
 }
 
 @media (min-width: 768px) {
 
-  .webp .advantages__wrapper { background-image: url(/img/advantagessTreangelDesc.webp); }
+  .webp .advantages__wrapper { background-image: url(../img/advantagessTreangelDesc.webp); }
 }
 
 @media (min-width: 768px) {
 
-  .webp .reviews__button--back::before, .webp .reviews__button--next::before { background-image: url(/img/arrow.webp); }
+  .webp .reviews__button--back::before, .webp .reviews__button--next::before { background-image: url(../img/arrow.webp); }
 }
 
 @media (min-width: 768px) {
 
-  .webp .works__wrapper { background-image: url(/img/angle-works-table.webp); }
+  .webp .works__wrapper { background-image: url(../img/angle-works-table.webp); }
 }
 
 @media (min-width: 768px) {
 
-  .webp .sale__time::before { background-image: url(/img/clock-tablet-1x.webp); }
+  .webp .sale__time::before { background-image: url(../img/clock-tablet-1x.webp); }
 }
 
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 768px) and (-o-min-device-pixel-ratio: 3/2), (min-width: 768px) and (min-resolution: 144dpi), (min-width: 768px) and (min-resolution: 1.5dppx) {
 
-  .webp .page-header { background-image: url(/img/back-tablet-2x.webp); }
+  .webp .page-header { background-image: url(../img/back-tablet-2x.webp); }
 }
 
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 768px) and (-o-min-device-pixel-ratio: 3/2), (min-width: 768px) and (min-resolution: 144dpi), (min-width: 768px) and (min-resolution: 1.5dppx) {
 
-  .webp .page-header--photo { background-image: url(/img/angleHeader-1x.webp), url(/img/back-tablet-photo-2x.webp); }
+  .webp .page-header--photo { background-image: url(../img/angleHeader-1x.webp), url(../img/back-tablet-photo-2x.webp); }
 }
 
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 768px) and (-o-min-device-pixel-ratio: 3/2), (min-width: 768px) and (min-resolution: 144dpi), (min-width: 768px) and (min-resolution: 1.5dppx) {
 
-  .webp .user-list__login::before { background-image: url(/img/login-2x.webp); }
+  .webp .user-list__login::before { background-image: url(../img/login-2x.webp); }
 }
 
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 768px) and (-o-min-device-pixel-ratio: 3/2), (min-width: 768px) and (min-resolution: 144dpi), (min-width: 768px) and (min-resolution: 1.5dppx) {
 
-  .webp .reviews__button--back::before, .webp .reviews__button--next::before { background-image: url(/img/arrow2x.webp); }
+  .webp .reviews__button--back::before, .webp .reviews__button--next::before { background-image: url(../img/arrow2x.webp); }
 }
 
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 768px) and (-o-min-device-pixel-ratio: 3/2), (min-width: 768px) and (min-resolution: 144dpi), (min-width: 768px) and (min-resolution: 1.5dppx) {
 
-  .webp .sale__time::before { background-image: url(/img/clock-tablet-2x.webp); }
+  .webp .sale__time::before { background-image: url(../img/clock-tablet-2x.webp); }
 }
 
 @media (min-width: 1200px) {
 
-  .webp .page-header { background-image: url(/img/back-desktop-1x.webp); }
+  .webp .page-header { background-image: url(../img/back-desktop-1x.webp); }
 }
 
 @media (min-width: 1200px) {
 
-  .webp .page-header--photo { background-image: url(/img/angle-photo-header.webp), url(/img/back-desktop-1x.webp); }
+  .webp .page-header--photo { background-image: url(../img/angle-photo-header.webp), url(../img/back-desktop-1x.webp); }
 }
 
 @media (min-width: 1200px) {
 
-  .webp .social__link--vk { background-image: url(/img/vk-icon-small-1x.webp); }
+  .webp .social__link--vk { background-image: url(../img/vk-icon-small-1x.webp); }
 }
 
 @media (min-width: 1200px) {
 
-  .webp .social__link--fb { background-image: url(/img/facebook-icon-small-1x.webp); }
+  .webp .social__link--fb { background-image: url(../img/facebook-icon-small-1x.webp); }
 }
 
 @media (min-width: 1200px) {
 
-  .webp .social__link--inst { background-image: url(/img/insta-icon-small-1x.webp); }
+  .webp .social__link--inst { background-image: url(../img/insta-icon-small-1x.webp); }
 }
 
 @media (min-width: 1200px) {
 
-  .webp .sale__time::before { background-image: url(/img/clock-desctop-1x.webp); }
+  .webp .sale__time::before { background-image: url(../img/clock-desctop-1x.webp); }
 }
 
 @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1200px) and (-o-min-device-pixel-ratio: 3/2), (min-width: 1200px) and (min-resolution: 144dpi), (min-width: 1200px) and (min-resolution: 1.5dppx) {
 
-  .webp .page-header { background-image: url(/img/back-desktop-2x.webp); }
+  .webp .page-header { background-image: url(../img/back-desktop-2x.webp); }
 }
 
 @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1200px) and (-o-min-device-pixel-ratio: 3/2), (min-width: 1200px) and (min-resolution: 144dpi), (min-width: 1200px) and (min-resolution: 1.5dppx) {
 
-  .webp .page-header--photo { background-image: url(/img/angle-photo-header.webp), url(/img/back-desktop-2x.webp); }
+  .webp .page-header--photo { background-image: url(../img/angle-photo-header.webp), url(../img/back-desktop-2x.webp); }
 }
 
 @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1200px) and (-o-min-device-pixel-ratio: 3/2), (min-width: 1200px) and (min-resolution: 144dpi), (min-width: 1200px) and (min-resolution: 1.5dppx) {
 
-  .webp .social__link--vk { background-image: url(/img/vk-icon-small-2x.webp); }
+  .webp .social__link--vk { background-image: url(../img/vk-icon-small-2x.webp); }
 }
 
 @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1200px) and (-o-min-device-pixel-ratio: 3/2), (min-width: 1200px) and (min-resolution: 144dpi), (min-width: 1200px) and (min-resolution: 1.5dppx) {
 
-  .webp .social__link--fb { background-image: url(/img/facebook-icon-small-2x.webp); }
+  .webp .social__link--fb { background-image: url(../img/facebook-icon-small-2x.webp); }
 }
 
 @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1200px) and (-o-min-device-pixel-ratio: 3/2), (min-width: 1200px) and (min-resolution: 144dpi), (min-width: 1200px) and (min-resolution: 1.5dppx) {
 
-  .webp .social__link--inst { background-image: url(/img/insta-icon-small-2x.webp); }
+  .webp .social__link--inst { background-image: url(../img/insta-icon-small-2x.webp); }
 }
 
 @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1200px) and (-o-min-device-pixel-ratio: 3/2), (min-width: 1200px) and (min-resolution: 144dpi), (min-width: 1200px) and (min-resolution: 1.5dppx) {
 
-  .webp .sale__time::before { background-image: url(/img/clock-desctop-2x.webp); }
+  .webp .sale__time::before { background-image: url(../img/clock-desctop-2x.webp); }
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
 
-  .webp .advantages__title--1::before { background-image: url(/img/advantage-1-illustration-2x.webp); }
+  .webp .advantages__title--1::before { background-image: url(../img/advantage-1-illustration-2x.webp); }
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
 
-  .webp .advantages__title--2::before { background-image: url(/img/advantage-2-illustration-2x.webp); }
+  .webp .advantages__title--2::before { background-image: url(../img/advantage-2-illustration-2x.webp); }
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
 
-  .webp .advantages__title--3::before { background-image: url(/img/advantage-3-illustration-2x.webp); }
+  .webp .advantages__title--3::before { background-image: url(../img/advantage-3-illustration-2x.webp); }
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
 
-  .webp .social__link--vk { background-image: url(/img/vk-icon-big-2x.webp); }
+  .webp .social__link--vk { background-image: url(../img/vk-icon-big-2x.webp); }
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
 
-  .webp .social__link--fb { background-image: url(/img/facebook-icon-big-2x.webp); }
+  .webp .social__link--fb { background-image: url(../img/facebook-icon-big-2x.webp); }
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
 
-  .webp .social__link--inst { background-image: url(/img/insta-icon-big-2x.webp); }
+  .webp .social__link--inst { background-image: url(../img/insta-icon-big-2x.webp); }
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
 
-  .webp .sale__time::before { background-image: url(/img/clock-mobile-2x.webp); }
+  .webp .sale__time::before { background-image: url(../img/clock-mobile-2x.webp); }
 }
