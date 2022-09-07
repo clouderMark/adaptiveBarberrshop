@@ -2692,7 +2692,7 @@ textarea:active {
   }
 
   .price__wrapper {
-    background-image: none;
+    background-image: none !important;
   }
 
   .price__title {
